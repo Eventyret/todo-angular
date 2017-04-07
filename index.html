@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='TodoApp'>
 <head>
+    <base href="/"> <!-- needed for Angular HTML 5 mode -->
     <title>Angular Todo</title>
-    <base href="/"> <!-- needed for Angular HTML5 mode -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <style type="text/css">
+        body {
+            padding-top: 70px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Angular Todo!</h1>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Angular Todo</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/todo">Todo</a></li>
+                <li><a href="/accounts/register">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div ng-view>
+ 
+    </div>
+<script src='js/app.js'></script>
+<script src='js/controller.js'></script>
+<script src='js/service.js'></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "angular-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eventyret/todo-angular.git"
+  },
+  "author": "Simen Daehlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eventyret/todo-angular/issues"
+  },
+  "homepage": "https://github.com/Eventyret/todo-angular#readme"
+}
